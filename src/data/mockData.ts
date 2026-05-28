@@ -55,35 +55,7 @@ export const currentUser = {
   status: 'Стандарт',
 };
 
-export const accounts: Account[] = [
-  {
-    id: 'acc1',
-    name: 'Основной счёт',
-    number: '4081 7810 9900 0012 3456',
-    balance: 0,
-    currency: 'RUB',
-    type: 'checking',
-    color: 'blue',
-  },
-  {
-    id: 'acc2',
-    name: 'Накопительный',
-    number: '4081 7810 9900 0098 7654',
-    balance: 0,
-    currency: 'RUB',
-    type: 'savings',
-    color: 'gold',
-  },
-  {
-    id: 'acc3',
-    name: 'Вклад «Доходный»',
-    number: '4081 7810 9900 0055 1122',
-    balance: 0,
-    currency: 'RUB',
-    type: 'deposit',
-    color: 'green',
-  },
-];
+export const accounts: Account[] = [];
 
 export const cards: Card[] = [
   {
