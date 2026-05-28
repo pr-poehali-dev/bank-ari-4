@@ -4,7 +4,7 @@ import Icon from '@/components/ui/icon';
 import { currentUser } from '@/data/mockData';
 
 const navItems = [
-  { path: '/', label: 'Главная', icon: 'LayoutDashboard' },
+  { path: '/dashboard', label: 'Главная', icon: 'LayoutDashboard' },
   { path: '/accounts', label: 'Счета', icon: 'Wallet' },
   { path: '/cards', label: 'Карты', icon: 'CreditCard' },
   { path: '/transfers', label: 'Переводы', icon: 'ArrowLeftRight' },
