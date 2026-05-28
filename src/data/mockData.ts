@@ -52,7 +52,7 @@ export const currentUser = {
   email: 'lyokha@mail.ru',
   avatar: 'Лё',
   memberSince: 'Март 2021',
-  status: 'Premium',
+  status: 'Стандарт',
 };
 
 export const accounts: Account[] = [
@@ -60,7 +60,7 @@ export const accounts: Account[] = [
     id: 'acc1',
     name: 'Основной счёт',
     number: '4081 7810 9900 0012 3456',
-    balance: 200_000_000_000,
+    balance: 0,
     currency: 'RUB',
     type: 'checking',
     color: 'blue',
@@ -69,7 +69,7 @@ export const accounts: Account[] = [
     id: 'acc2',
     name: 'Накопительный',
     number: '4081 7810 9900 0098 7654',
-    balance: 200_000_000_000,
+    balance: 0,
     currency: 'RUB',
     type: 'savings',
     color: 'gold',
@@ -78,7 +78,7 @@ export const accounts: Account[] = [
     id: 'acc3',
     name: 'Вклад «Доходный»',
     number: '4081 7810 9900 0055 1122',
-    balance: 200_000_000_000,
+    balance: 0,
     currency: 'RUB',
     type: 'deposit',
     color: 'green',
