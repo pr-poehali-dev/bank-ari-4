@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { currentUser } from '@/data/mockData';
 
@@ -12,6 +13,7 @@ export default function Profile() {
   });
   const [biometric, setBiometric] = useState(true);
   const [twoFactor, setTwoFactor] = useState(true);
+  const navigate = useNavigate();
 
   const Toggle = ({ value, onChange }: { value: boolean; onChange: () => void }) => (
     <button
@@ -114,7 +116,10 @@ export default function Profile() {
       </div>
 
       {/* Logout */}
-      <button className="w-full flex items-center justify-center gap-2 py-3.5 rounded-2xl border border-red-500/30 text-red-400 hover:bg-red-500/8 transition-colors text-sm font-medium">
+      <button
+        onClick={() => navigate('/login')}
+        className="w-full flex items-center justify-center gap-2 py-3.5 rounded-2xl border border-red-500/30 text-red-400 hover:bg-red-500/8 transition-colors text-sm font-medium"
+      >
         <Icon name="LogOut" size={16} />
         Выйти из аккаунта
       </button>

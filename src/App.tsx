@@ -11,6 +11,7 @@ import Transfers from "@/pages/Transfers";
 import History from "@/pages/History";
 import Support from "@/pages/Support";
 import Profile from "@/pages/Profile";
+import Login from "@/pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/history" element={<Layout><History /></Layout>} />
           <Route path="/support" element={<Layout><Support /></Layout>} />
           <Route path="/profile" element={<Layout><Profile /></Layout>} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
