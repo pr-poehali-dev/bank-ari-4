@@ -28,12 +28,9 @@ export default function Dashboard() {
           <p className="text-muted-foreground text-sm">Добро пожаловать,</p>
           <h1 className="text-2xl font-bold text-foreground">{currentUser.name.split(' ')[0]} 👋</h1>
         </div>
-        <div className="text-right">
-          <p className="text-xs text-muted-foreground">27 мая 2026</p>
-          <div className="flex items-center gap-1.5 justify-end mt-0.5">
-            <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse-glow" />
-            <p className="text-xs text-green-400">Онлайн</p>
-          </div>
+        <div className="flex items-center gap-1.5">
+          <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse-glow" />
+          <p className="text-xs text-green-400">Онлайн</p>
         </div>
       </div>
 
